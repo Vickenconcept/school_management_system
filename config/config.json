@@ -1,0 +1,10 @@
+{
+    "MAIL_MAILER": "smtp",
+    "MAIL_HOST": "mail.vixblock.com.ng",
+    "MAIL_PORT": "465",
+    "MAIL_USERNAME": "vicken@vixblock.com.ng",
+    "MAIL_PASSWORD": "Vicken111?",
+    "MAIL_ENCRYPTION": "ssl",
+    "MAIL_FROM_ADDRESS": "vicken@vixblock.com.ng",
+    "MAIL_FROM_NAME": "LARABOT"
+}
