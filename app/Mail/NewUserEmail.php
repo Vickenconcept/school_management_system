@@ -5,6 +5,7 @@ namespace App\Mail;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
+use Illuminate\Mail\Mailables\Content;
 use Illuminate\Queue\SerializesModels;
 
 class NewUserEmail extends Mailable
@@ -27,9 +28,20 @@ class NewUserEmail extends Mailable
      *
      * @return $this
      */
-    public function build()
+    // public function build()
+    // {
+    //     return $this->subject('User Create Report')
+    //     ->view('email.newUserEmail')
+    //     ->from(get_settings('smtp_user'),
+    //     get_settings('system_title'));
+    // }
+
+    public function content(): Content
     {
-        dd($this->data);
-        return $this->subject('User Create Report')->view('email.newUserEmail')->from(get_settings('smtp_user'),get_settings('system_title'));
+        return new Content(
+            view: 'email.newUserEmail',
+            with: ['system_title' => get_settings('system_title')],
+        );
+
     }
 }

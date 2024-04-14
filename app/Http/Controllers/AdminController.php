@@ -236,12 +236,13 @@ class AdminController extends Controller
                 'user_information' => $data['user_information'],
                 'status' => 1,
             ]);
+            Mail::to($data['email'])->send(new NewUserEmail($data));
         } else {
             return redirect()->back()->with('error', 'Email was already taken.');
         }
-        if (!empty(get_settings('smtp_user')) && (get_settings('smtp_pass')) && (get_settings('smtp_host')) && (get_settings('smtp_port'))) {
-            Mail::to($data['email'])->send(new NewUserEmail($data));
-        }
+        // if (!empty(get_settings('smtp_user')) && (get_settings('smtp_pass')) && (get_settings('smtp_host')) && (get_settings('smtp_port'))) {
+        //     Mail::to($data['email'])->send(new NewUserEmail($data));
+        // }
         return redirect()->back()->with('message', 'You have successfully add user.');
     }
 
@@ -384,28 +385,27 @@ class AdminController extends Controller
 
         $duplicate_user_check = User::get()->where('email', $data['email']);
 
-        // if (count($duplicate_user_check) == 0) {
+        if (count($duplicate_user_check) == 0) {
 
-        //     User::create([
-        //         'name' => $data['name'],
-        //         'email' => $data['email'],
-        //         'password' => Hash::make($data['password']),
-        //         'role_id' => '3',
-        //         'school_id' => auth()->user()->school_id,
-        //         'user_information' => $data['user_information'],
-        //         'status' => 1,
-        //         'department_id' => $data['department_id'],
-        //         'designation' => $data['designation'],
-        //     ]);
-        // } else {
-        //     return redirect()->back()->with('error', 'Email was already taken.');
-        // }
-        if (!empty(get_settings('smtp_user')) && (get_settings('smtp_pass')) && (get_settings('smtp_host')) && (get_settings('smtp_port'))) {
-            dd('git it');
+            User::create([
+                'name' => $data['name'],
+                'email' => $data['email'],
+                'password' => Hash::make($data['password']),
+                'role_id' => '3',
+                'school_id' => auth()->user()->school_id,
+                'user_information' => $data['user_information'],
+                'status' => 1,
+                'department_id' => $data['department_id'],
+                'designation' => $data['designation'],
+            ]);
             Mail::to($data['email'])->send(new NewUserEmail($data));
+        } else {
+            return redirect()->back()->with('error', 'Email was already taken.');
         }
-        Mail::to($data['email'])->send(new NewUserEmail($data));
-        dd('here');
+        // if (!empty(get_settings('smtp_user')) && (get_settings('smtp_pass')) && (get_settings('smtp_host')) && (get_settings('smtp_port'))) {
+        //     dd('git it');
+        //     Mail::to($data['email'])->send(new NewUserEmail($data));
+        // }
         return redirect()->back()->with('message', 'You have successfully add teacher.');
     }
 
@@ -540,12 +540,13 @@ class AdminController extends Controller
                 'user_information' => $data['user_information'],
                 'status' => 1,
             ]);
+            Mail::to($data['email'])->send(new NewUserEmail($data));
         } else {
             return redirect()->back()->with('error', 'Email was already taken.');
         }
-        if (!empty(get_settings('smtp_user')) && (get_settings('smtp_pass')) && (get_settings('smtp_host')) && (get_settings('smtp_port'))) {
-            Mail::to($data['email'])->send(new NewUserEmail($data));
-        }
+        // if (!empty(get_settings('smtp_user')) && (get_settings('smtp_pass')) && (get_settings('smtp_host')) && (get_settings('smtp_port'))) {
+        //     Mail::to($data['email'])->send(new NewUserEmail($data));
+        // }
         return redirect()->back()->with('message', 'You have successfully add accountant.');
     }
 
@@ -681,12 +682,13 @@ class AdminController extends Controller
                 'user_information' => $data['user_information'],
                 'status' => 1,
             ]);
+            Mail::to($data['email'])->send(new NewUserEmail($data));
         } else {
             return redirect()->back()->with('error', 'Email was already taken.');
         }
-        if (!empty(get_settings('smtp_user')) && (get_settings('smtp_pass')) && (get_settings('smtp_host')) && (get_settings('smtp_port'))) {
-            Mail::to($data['email'])->send(new NewUserEmail($data));
-        }
+        // if (!empty(get_settings('smtp_user')) && (get_settings('smtp_pass')) && (get_settings('smtp_host')) && (get_settings('smtp_port'))) {
+        //     Mail::to($data['email'])->send(new NewUserEmail($data));
+        // }
         return redirect()->back()->with('message', 'You have successfully add librarian.');
     }
 
@@ -824,6 +826,7 @@ class AdminController extends Controller
                 'user_information' => $data['user_information'],
                 'status' => 1,
             ]);
+            Mail::to($data['email'])->send(new NewUserEmail($data));
         } else {
             return redirect()->back()->with('error', 'Email was already taken.');
         }
@@ -1022,12 +1025,13 @@ class AdminController extends Controller
                 'user_information' => $data['user_information'],
                 'status' => 1,
             ]);
+            Mail::to($data['email'])->send(new NewUserEmail($data));
         } else {
             return redirect()->back()->with('error', 'Email was already taken.');
         }
-        if (!empty(get_settings('smtp_user')) && (get_settings('smtp_pass')) && (get_settings('smtp_host')) && (get_settings('smtp_port'))) {
-            Mail::to($data['email'])->send(new NewUserEmail($data));
-        }
+        // if (!empty(get_settings('smtp_user')) && (get_settings('smtp_pass')) && (get_settings('smtp_host')) && (get_settings('smtp_port'))) {
+        //     Mail::to($data['email'])->send(new NewUserEmail($data));
+        // }
         return redirect()->back()->with('message', 'You have successfully add student.');
     }
 
@@ -1292,10 +1296,11 @@ class AdminController extends Controller
                 'school_id' => auth()->user()->school_id,
                 'session_id' => $active_session,
             ]);
+            Mail::to($data['email'])->send(new NewUserEmail($data));
 
-            if (!empty(get_settings('smtp_user')) && (get_settings('smtp_pass')) && (get_settings('smtp_host')) && (get_settings('smtp_port'))) {
-                Mail::to($data['email'])->send(new NewUserEmail($data));
-            }
+            // if (!empty(get_settings('smtp_user')) && (get_settings('smtp_pass')) && (get_settings('smtp_host')) && (get_settings('smtp_port'))) {
+            //     Mail::to($data['email'])->send(new NewUserEmail($data));
+            // }
             return redirect()->back()->with('message', 'Admission successfully done.');
         } else {
 
