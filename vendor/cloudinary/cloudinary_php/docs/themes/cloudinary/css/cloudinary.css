@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .navbar-brand {
-    background-image: url("https://cloudinary-res.cloudinary.com/image/upload/docsite/brand-assets/cloudinary_cloud_glyph_4ref.svg");
+    background-image: url("https://cloudinary-res.cloudinary.com/image/upload/docsite/brand-../assets/cloudinary_cloud_glyph_4ref.svg");
     background-repeat: no-repeat;
     background-position: left center;
     padding-left: 60px;

@@ -51,7 +51,7 @@
   border-radius: 12px !important;
 }
 
-/*@import url('assets/vendors/bootstrap-icons-1.8.1/fonts/bootstrap-icons.woff');*/
+/*@import url('../assets/vendors/bootstrap-icons-1.8.1/fonts/bootstrap-icons.woff');*/
 :root {
   --dark-color-1: #181c32;
   --text-color-1: #797c8b;

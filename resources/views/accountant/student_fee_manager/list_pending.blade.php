@@ -52,7 +52,7 @@ use App\Http\Controllers\CommonController;
 
                         </small>
                     </td>
-                    <td class="link"> <a href="{{ asset('assets/uploads/offline_payment/'.$invoice['document_image']) }}" download> {{ $invoice['document_image'] }} </a></td>
+                    <td class="link"> <a href="{{ asset('../assets/uploads/offline_payment/'.$invoice['document_image']) }}" download> {{ $invoice['document_image'] }} </a></td>
                     <td>
                         <?php if (strtolower($invoice['status']) == 'unpaid'): ?>
                             <span class="eBadge ebg-soft-danger">{{ ucfirst($invoice['status']) }}</span>
@@ -93,7 +93,7 @@ use App\Http\Controllers\CommonController;
 @else
 <div class="card-body permission_content">
     <div class="empty_box center">
-        <img class="mb-3" width="150px" src="{{ asset('assets/images/empty_box.png') }}" />
+        <img class="mb-3" width="150px" src="{{ asset('../assets/images/empty_box.png') }}" />
         <br>
         {{ get_phrase('No data found') }}
     </div>

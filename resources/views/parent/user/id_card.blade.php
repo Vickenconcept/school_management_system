@@ -31,7 +31,7 @@
             @endphp  
            
               @if(!empty($school_data->school_logo))
-                <img class="im-sc-one" src="{{ asset('assets/uploads/school_logo/'.DB::table('schools')->where('id', auth()->user()->school_id)->value('school_logo') ) }}">
+                <img class="im-sc-one" src="{{ asset('../assets/uploads/school_logo/'.DB::table('schools')->where('id', auth()->user()->school_id)->value('school_logo') ) }}">
               @else
                 <img class="im-sc-one" src="images/id_logo.png">
               @endif

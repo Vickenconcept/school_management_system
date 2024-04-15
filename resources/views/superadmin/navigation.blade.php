@@ -12,38 +12,38 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- all the css files -->
-    <link rel="shortcut icon" href="{{ asset('assets/uploads/logo/' . get_settings('favicon')) }}" />
+    <link rel="shortcut icon" href="{{ asset('../assets/uploads/logo/' . get_settings('favicon')) }}" />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendors/bootstrap-5.1.3/css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('../assets/vendors/bootstrap-5.1.3/css/bootstrap.min.css') }}" />
 
     <!--Custom css-->
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/swiper-bundle.min.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/main.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('../assets/css/swiper-bundle.min.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('../assets/css/main.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('../assets/css/style.css') }}" />
     <!-- Datepicker css -->
-    <link rel="stylesheet" href="{{ asset('assets/css/daterangepicker.css') }}" />
+    <link rel="stylesheet" href="{{ asset('../assets/css/daterangepicker.css') }}" />
     <!-- Select2 css -->
-    <link rel="stylesheet" href="{{ asset('assets/css/select2.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('../assets/css/select2.min.css') }}" />
 
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/lightbox.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('../assets/css/lightbox.css') }}">
     <!---Icon Piker -->
 
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/fontawesome-all.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('../assets/css/fontawesome-all.min.css') }}">
 
     <link rel="stylesheet" type="text/css"
-        href="{{ asset('assets/css/font-awesome-icon-picker/fontawesome-iconpicker.min.css') }}">
+        href="{{ asset('../assets/css/font-awesome-icon-picker/fontawesome-iconpicker.min.css') }}">
 
     <link rel="stylesheet" type="text/css"
-        href="{{ asset('assets/vendors/bootstrap-icons-1.8.1/bootstrap-icons.css') }}" />
+        href="{{ asset('../assets/vendors/bootstrap-icons-1.8.1/bootstrap-icons.css') }}" />
 
     <!--Toaster css-->
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/toastr.min.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('../assets/css/toastr.min.css') }}" />
 
     <!-- Calender css -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/calender/main.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('../assets/calender/main.css') }}" />
 
     <!--Main Jquery-->
-    <script src="{{ asset('assets/vendors/jquery/jquery-3.6.0.min.js') }}"></script>
+    <script src="{{ asset('../assets/vendors/jquery/jquery-3.6.0.min.js') }}"></script>
 
 
 </head>
@@ -58,7 +58,7 @@
     <div class="sidebar print-hidden">
         <div class="logo-details">
             <div class="img_wrapper">
-                <img height="40px" class="" src="{{ asset('assets/uploads/logo/' . get_settings('white_logo')) }}"
+                <img height="40px" class="" src="{{ asset('../assets/uploads/logo/' . get_settings('white_logo')) }}"
                     alt="" />
             </div>
             <span class="logo_name">{{ get_settings('navbar_title') }}</span>
@@ -489,36 +489,36 @@
 
 
     <!--Bootstrap bundle with popper-->
-    <script src="{{ asset('assets/vendors/bootstrap-5.1.3/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('assets/js/swiper-bundle.min.js') }}"></script>
+    <script src="{{ asset('../assets/vendors/bootstrap-5.1.3/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('../assets/js/swiper-bundle.min.js') }}"></script>
     <!-- Datepicker js -->
-    <script src="{{ asset('assets/js/moment.min.js') }}"></script>
-    <script src="{{ asset('assets/js/daterangepicker.min.js') }}"></script>
+    <script src="{{ asset('../assets/js/moment.min.js') }}"></script>
+    <script src="{{ asset('../assets/js/daterangepicker.min.js') }}"></script>
     <!-- Select2 js -->
-    <script src="{{ asset('assets/js/select2.min.js') }}"></script>
+    <script src="{{ asset('../assets/js/select2.min.js') }}"></script>
 
     <!--Custom Script-->
-    <script src="{{ asset('assets/js/script.js') }}"></script>
-    <script src="{{ asset('assets/js/custom.js') }}"></script>
+    <script src="{{ asset('../assets/js/script.js') }}"></script>
+    <script src="{{ asset('../assets/js/custom.js') }}"></script>
 
     <!--Toaster Script-->
-    <script src="{{ asset('assets/js/toastr.min.js') }}"></script>
+    <script src="{{ asset('../assets/js/toastr.min.js') }}"></script>
 
     <!--pdf Script-->
-    <script src="{{ asset('assets/js/pdfmake.min.js') }}"></script>
-    <script src="{{ asset('assets/js/html2pdf.bundle.min.js') }}"></script>
+    <script src="{{ asset('../assets/js/pdfmake.min.js') }}"></script>
+    <script src="{{ asset('../assets/js/html2pdf.bundle.min.js') }}"></script>
 
     <!--html2canvas Script-->
-    <script src="{{ asset('assets/js/html2canvas.min.js') }}"></script>
+    <script src="{{ asset('../assets/js/html2canvas.min.js') }}"></script>
 
     <!---Image Gallery--->
-    <script src="{{ asset('assets/js/lightbox-plus-jquery.js') }}"></script>
+    <script src="{{ asset('../assets/js/lightbox-plus-jquery.js') }}"></script>
 
     <!--Toaster Script-->
-    <script src="{{ asset('assets/js/toastr.min.js') }}"></script>
+    <script src="{{ asset('../assets/js/toastr.min.js') }}"></script>
 
     <!--Fontawsome Icon-Piker-->
-    <script src="{{ asset('assets/js/font-awesome-icon-picker/fontawesome-iconpicker.min.js') }}"></script>
+    <script src="{{ asset('../assets/js/font-awesome-icon-picker/fontawesome-iconpicker.min.js') }}"></script>
 
     <script>
         // JavaScript to handle language selection

@@ -174,7 +174,7 @@ final class AssetsTest extends UnitTestCase
 
         $lastRequest = $mockAdminApi->getMockHandler()->getLastRequest();
 
-        self::assertRequestUrl($lastRequest, '/resources/related_assets/image/upload/' . self::$UNIQUE_TEST_ID);
+        self::assertRequestUrl($lastRequest, '/resources/related_../assets/image/upload/' . self::$UNIQUE_TEST_ID);
         self::assertRequestJsonBodySubset(
             $lastRequest,
             [
@@ -190,7 +190,7 @@ final class AssetsTest extends UnitTestCase
 
         $lastRequest = $mockAdminApi->getMockHandler()->getLastRequest();
 
-        self::assertRequestUrl($lastRequest, '/resources/related_assets/image/upload/' . self::$UNIQUE_TEST_ID);
+        self::assertRequestUrl($lastRequest, '/resources/related_../assets/image/upload/' . self::$UNIQUE_TEST_ID);
         self::assertRequestJsonBodySubset(
             $lastRequest,
             [
@@ -217,7 +217,7 @@ final class AssetsTest extends UnitTestCase
 
         $lastRequest = $mockAdminApi->getMockHandler()->getLastRequest();
 
-        self::assertRequestUrl($lastRequest, '/resources/related_assets/' . self::API_TEST_ASSET_ID);
+        self::assertRequestUrl($lastRequest, '/resources/related_../assets/' . self::API_TEST_ASSET_ID);
         self::assertRequestJsonBodySubset(
             $lastRequest,
             [
@@ -233,7 +233,7 @@ final class AssetsTest extends UnitTestCase
 
         $lastRequest = $mockAdminApi->getMockHandler()->getLastRequest();
 
-        self::assertRequestUrl($lastRequest, '/resources/related_assets/' . self::API_TEST_ASSET_ID);
+        self::assertRequestUrl($lastRequest, '/resources/related_../assets/' . self::API_TEST_ASSET_ID);
         self::assertRequestJsonBodySubset(
             $lastRequest,
             [

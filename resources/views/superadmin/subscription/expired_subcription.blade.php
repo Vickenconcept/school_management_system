@@ -117,7 +117,7 @@ use App\Models\School;
 		          </div>
 		          <div class="att-banner-img order-0 order-md-1">
 		            <img
-		              src="{{ asset('assets/images/attendance-report-banner.png') }}"
+		              src="{{ asset('../assets/images/attendance-report-banner.png') }}"
 		              alt=""
 		            />
 		          </div>
@@ -157,7 +157,7 @@ use App\Models\School;
 			</div>
 			@else
 			<div class="empty_box center">
-                <img class="mb-3" width="150px" src="{{ asset('assets/images/empty_box.png') }}" />
+                <img class="mb-3" width="150px" src="{{ asset('../assets/images/empty_box.png') }}" />
                 <br>
                 {{ get_phrase('No date found') }}
             </div>

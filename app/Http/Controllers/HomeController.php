@@ -98,7 +98,7 @@ class HomeController extends Controller
     
                         $imageName = time() . '.' . $data['photo']->extension();
     
-                        $data['photo']->move(public_path('assets/uploads/user-images/'), $imageName);
+                        $data['photo']->move(public_path('../assets/uploads/user-images/'), $imageName);
     
                         $photo  = $imageName;
                     } else {
@@ -161,7 +161,7 @@ class HomeController extends Controller
     
                         $imageName = time() . '.' . $data['photo']->extension();
     
-                        $data['photo']->move(public_path('assets/uploads/user-images/'), $imageName);
+                        $data['photo']->move(public_path('../assets/uploads/user-images/'), $imageName);
     
                         $photo  = $imageName;
                     } else {

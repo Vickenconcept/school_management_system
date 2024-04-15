@@ -313,9 +313,9 @@ class TeacherController extends Controller
             $filename = $file->getClientOriginalName();
             $extension = $file->getClientOriginalExtension(); //Get extension of uploaded file
 
-            $file->move(public_path('assets/uploads/syllabus/'), $filename);
+            $file->move(public_path('../assets/uploads/syllabus/'), $filename);
 
-            $filepath = asset('assets/uploads/syllabus/' . $filename);
+            $filepath = asset('../assets/uploads/syllabus/' . $filename);
         }
 
         Syllabus::create([

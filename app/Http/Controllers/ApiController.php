@@ -267,7 +267,7 @@ class ApiController extends Controller
                 $res[$key]['subject_id'] = $syllabus->subject_id;
                 $res[$key]['subject_name'] = (new CommonController)->getSubjectDetails($syllabus->subject_id)->name;
                 $res[$key]['file'] = $syllabus->file;
-                $res[$key]['file_url'] = asset('assets/uploads/syllabus/'.$syllabus->file);
+                $res[$key]['file_url'] = asset('../assets/uploads/syllabus/'.$syllabus->file);
         	}
 
             if(count($subjects) > 0) {

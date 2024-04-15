@@ -20,15 +20,15 @@ use App\Models\User;
 
 //             $file_name = json_decode($user_information)->photo;
 
-//             if(file_exists( public_path().'/assets/uploads/user-images/'.$file_name ) && is_file(public_path().'/assets/uploads/user-images/'.$file_name)){
-//                 return asset('assets/uploads/user-images/'.$file_name);
+//             if(file_exists( public_path().'/../assets/uploads/user-images/'.$file_name ) && is_file(public_path().'/../assets/uploads/user-images/'.$file_name)){
+//                 return asset('../assets/uploads/user-images/'.$file_name);
 //             }else{
-//                 return asset('assets/uploads/user-images/thumbnail.png');
+//                 return asset('../assets/uploads/user-images/thumbnail.png');
 //             }
-//         }elseif(File::exists('public/assets/uploads/user-images/'.$file_name)){
-//             return asset('assets/uploads/user-images/'.$file_name);
+//         }elseif(File::exists('public/../assets/uploads/user-images/'.$file_name)){
+//             return asset('../assets/uploads/user-images/'.$file_name);
 //         }else{
-//             return asset('assets/uploads/user-images/thumbnail.png');
+//             return asset('../assets/uploads/user-images/thumbnail.png');
 //         }
 //     }
 // }

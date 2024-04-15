@@ -181,7 +181,7 @@
     function showLargeScrollableAjaxModal(url, header) {
         // SHOWING AJAX PRELOADER IMAGE
         jQuery('#large-scrollable-modal .modal-body').html(
-            '<div style="text-align:center;margin-top:200px;"><img style="width: 100px; opacity: 0.4; " src="{{ asset('public/assets/images/straight-loader.gif') }}" /></div>'
+            '<div style="text-align:center;margin-top:200px;"><img style="width: 100px; opacity: 0.4; " src="{{ asset('public/../assets/images/straight-loader.gif') }}" /></div>'
             );
         jQuery('#large-scrollable-modal .modal-title').html('...');
         // LOADING THE AJAX MODAL

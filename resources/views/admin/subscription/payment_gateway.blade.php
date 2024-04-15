@@ -35,23 +35,23 @@ if (!empty($subscription)) {
     <meta content="" name="description" />
     <meta content="" name="author" />
     <!-- all the css files -->
-    <link rel="shortcut icon" href="{{ asset('assets/images/logo.png') }}">
+    <link rel="shortcut icon" href="{{ asset('../assets/images/logo.png') }}">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendors/bootstrap-5.1.3/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('../assets/vendors/bootstrap-5.1.3/css/bootstrap.min.css') }}">
 
     <!--Custom css-->
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/swiper-bundle.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('../assets/css/swiper-bundle.min.css') }}">
 
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/custom.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('../assets/css/custom.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('../assets/css/style.css') }}" />
     <!-- Datepicker css -->
 
-    <link rel="stylesheet" href="{{ asset('assets/css/daterangepicker.css') }}" />
+    <link rel="stylesheet" href="{{ asset('../assets/css/daterangepicker.css') }}" />
     <!-- Select2 css -->
-    <link rel="stylesheet" href="{{ asset('assets/css/select2.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('../assets/css/select2.min.css') }}" />
 
     <link rel="stylesheet" type="text/css"
-        href="{{ asset('assets/vendors/bootstrap-icons-1.8.1/bootstrap-icons.css') }}">
+        href="{{ asset('../assets/vendors/bootstrap-icons-1.8.1/bootstrap-icons.css') }}">
 
 <body>
     <?php $off = ''; ?>
@@ -86,7 +86,7 @@ if (!empty($subscription)) {
                                 <div class="payment_gateway_option d-flex align-items-center">
                                     <div class="logo">
                                         @php
-                                            $image_logo = 'assets/images/' . $value['key'] . '.png';
+                                            $image_logo = '../assets/images/' . $value['key'] . '.png';
                                         @endphp
                                         <img src="{{ asset($image_logo) }}" alt="" />
                                     </div>
@@ -113,7 +113,7 @@ if (!empty($subscription)) {
                             <div class="payment_gateway_option d-flex align-items-center">
                                 <div class="logo">
                                     @php
-                                        $image_logo = 'assets/images/offline.png';
+                                        $image_logo = '../assets/images/offline.png';
                                     @endphp
                                     <img src="{{ asset($image_logo) }}" alt="" />
                                 </div>
@@ -255,15 +255,15 @@ if (!empty($subscription)) {
 
                                     @if (in_array(strtolower($fileExtension), $allowedExtensions))
                                         <span class="badge bg-success m-1">
-                                            <a href="{{ asset('assets/uploads/offline_payment/' . get_settings('off_pay_ins_file')) }}"
+                                            <a href="{{ asset('../assets/uploads/offline_payment/' . get_settings('off_pay_ins_file')) }}"
                                                 download><img
-                                                    src="{{ asset('assets/uploads/offline_payment/' . get_settings('off_pay_ins_file')) }}"
+                                                    src="{{ asset('../assets/uploads/offline_payment/' . get_settings('off_pay_ins_file')) }}"
                                                     width="539px"></a>
                                         </span>
                                     @else
                                         <span class="badge bg-success m-1">
                                             <a style="color:#fff; font-size: 14px;"
-                                                href="{{ asset('assets/uploads/offline_payment/' . get_settings('off_pay_ins_file')) }}"
+                                                href="{{ asset('../assets/uploads/offline_payment/' . get_settings('off_pay_ins_file')) }}"
                                                 download>Download the instruction <i
                                                     class="bi bi-file-earmark-richtext-fill"></i></a>
                                         </span>
@@ -291,10 +291,10 @@ if (!empty($subscription)) {
 
 
 
-        <script src="{{ asset('assets/vendors/jquery/jquery-3.6.0.min.js') }}"></script>
-        <script src="{{ asset('assets/vendors/bootstrap-5.1.3/js/bootstrap.bundle.min.js') }}"></script>
+        <script src="{{ asset('../assets/vendors/jquery/jquery-3.6.0.min.js') }}"></script>
+        <script src="{{ asset('../assets/vendors/bootstrap-5.1.3/js/bootstrap.bundle.min.js') }}"></script>
 
-        <script src="{{ asset('assets/js/swiper-bundle.min.js') }}"></script>
+        <script src="{{ asset('../assets/js/swiper-bundle.min.js') }}"></script>
 
         <script type="text/javascript"></script>
 </body>

@@ -125,7 +125,7 @@ use App\Models\Department;;
 
 			<?php else: ?>
 			<div class="empty_box center">
-        <img class="mb-3" width="150px" src="<?php echo e(asset('assets/images/empty_box.png')); ?>" />
+        <img class="mb-3" width="150px" src="<?php echo e(asset('../assets/images/empty_box.png')); ?>" />
         <br>
 	    </div>
 			<?php endif; ?>

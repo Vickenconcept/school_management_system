@@ -324,7 +324,7 @@ use App\Models\Section;
             </div>
             <?php else: ?>
             <div class="empty_box center">
-              <img class="mb-3" width="150px" src="<?php echo e(asset('assets/images/empty_box.png')); ?>" />
+              <img class="mb-3" width="150px" src="<?php echo e(asset('../assets/images/empty_box.png')); ?>" />
               <br>
               <span class=""><?php echo e(get_phrase('No data found')); ?></span>
             </div>

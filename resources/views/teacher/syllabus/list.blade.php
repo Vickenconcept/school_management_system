@@ -16,7 +16,7 @@ use App\Models\Subject;
         <?php foreach($syllabuses as $syllabus):?>
             <tr>
                 <td>{{ $syllabus['title'] }}</td>
-                <td><a href="{{ asset('assets/uploads/syllabus') }}/{{ $syllabus['file'] }}" class="btn btn-primary btn-sm bi bi-download" download>{{ get_phrase(' Download') }}</a></td>
+                <td><a href="{{ asset('../assets/uploads/syllabus') }}/{{ $syllabus['file'] }}" class="btn btn-primary btn-sm bi bi-download" download>{{ get_phrase(' Download') }}</a></td>
                 <td>
                     <?php $subject= Subject::where('id' ,$syllabus['subject_id'])->first()->toArray(); ?>
                     {{ $subject['name'] }}
@@ -47,7 +47,7 @@ use App\Models\Subject;
 @else
 <div class="syllabus_content">
     <div class="empty_box center">
-        <img class="mb-3" width="150px" src="{{ asset('assets/images/empty_box.png') }}" />
+        <img class="mb-3" width="150px" src="{{ asset('../assets/images/empty_box.png') }}" />
         <br>
         {{ get_phrase('No data found') }}
     </div>

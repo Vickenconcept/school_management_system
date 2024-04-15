@@ -172,7 +172,7 @@ function largeModal(url, header)
   function showAjaxModal(url, header)
   {
       // SHOWING AJAX PRELOADER IMAGE
-      jQuery('#scrollable-modal .modal-body').html('<div style="text-align:center;margin-top:200px;"><img style="width: 100px; opacity: 0.4; " src="<?php echo e(asset('assets/images/straight-loader.gif')); ?>" /></div>');
+      jQuery('#scrollable-modal .modal-body').html('<div style="text-align:center;margin-top:200px;"><img style="width: 100px; opacity: 0.4; " src="<?php echo e(asset('../assets/images/straight-loader.gif')); ?>" /></div>');
       jQuery('#scrollable-modal .modal-title').html('...');
       // LOADING THE AJAX MODAL
       jQuery('#scrollable-modal').modal('show', {backdrop: 'true'});

@@ -110,7 +110,7 @@ if(count($attendance_of_students) > 0): ?>
 <?php else: ?>
 
 <div class="empty_box text-center">
-    <img class="mb-3" width="150px" src="{{ asset('assets/images/empty_box.png') }}" />
+    <img class="mb-3" width="150px" src="{{ asset('../assets/images/empty_box.png') }}" />
     <br>
     <span class="">
         {{ get_phrase('No data found') }}

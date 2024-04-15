@@ -11,13 +11,13 @@
         <div class="user-info d-flex flex-column">
             <div class="user-info-basic d-flex flex-column justify-content-center">
                 <div class="user-graphic-element-1">
-                    <img src="{{ asset('assets/images/sprial_1.png') }}" alt="" />
+                    <img src="{{ asset('../assets/images/sprial_1.png') }}" alt="" />
                 </div>
                 <div class="user-graphic-element-2">
-                    <img src="{{ asset('assets/images/polygon_1.png') }}" alt="" />
+                    <img src="{{ asset('../assets/images/polygon_1.png') }}" alt="" />
                 </div>
                 <div class="user-graphic-element-3">
-                    <img src="{{ asset('assets/images/circle_1.png') }}" alt="" />
+                    <img src="{{ asset('../assets/images/circle_1.png') }}" alt="" />
                 </div>
                 <div class="userImg">
                     <img width="100%" height="150px" src="{{ $user_image }}" alt="" />

@@ -11,35 +11,35 @@
     <meta content="" name="author" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- all the css files -->
-    <link rel="shortcut icon" href="{{ asset('assets/uploads/logo/' . get_settings('favicon')) }}" />
+    <link rel="shortcut icon" href="{{ asset('../assets/uploads/logo/' . get_settings('favicon')) }}" />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendors/bootstrap-5.1.3/css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('../assets/vendors/bootstrap-5.1.3/css/bootstrap.min.css') }}" />
 
     <!--Custom css-->
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/swiper-bundle.min.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('../assets/css/swiper-bundle.min.css') }}" />
 
 
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/main.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('../assets/css/style.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('../assets/css/main.css') }}" />
     <!-- Datepicker css -->
-    <link rel="stylesheet" href="{{ asset('assets/css/daterangepicker.css') }}" />
+    <link rel="stylesheet" href="{{ asset('../assets/css/daterangepicker.css') }}" />
     <!-- Select2 css -->
-    <link rel="stylesheet" href="{{ asset('assets/css/select2.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('../assets/css/select2.min.css') }}" />
     <!--Light box Image Gallery-->
-    <link rel="stylesheet" type="text/css" href="/ekattor8_v9/Ekattor8/public/assets/css/lightbox.css">
+    <link rel="stylesheet" type="text/css" href="/ekattor8_v9/Ekattor8/public/../assets/css/lightbox.css">
     <!-- SummerNote Css -->
-    <link rel="stylesheet" href="{{ asset('assets/css/summernote-lite.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('../assets/css/summernote-lite.min.css') }}" />
 
     <link rel="stylesheet" type="text/css"
-        href="{{ asset('assets/vendors/bootstrap-icons-1.8.1/bootstrap-icons.css') }}" />
+        href="{{ asset('../assets/vendors/bootstrap-icons-1.8.1/bootstrap-icons.css') }}" />
 
     <!--Toaster css-->
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/toastr.min.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('../assets/css/toastr.min.css') }}" />
 
     <!-- Calender css -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/calender/main.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('../assets/calender/main.css') }}" />
 
-    <script src="{{ asset('assets/vendors/jquery/jquery-3.6.0.min.js') }}"></script>
+    <script src="{{ asset('../assets/vendors/jquery/jquery-3.6.0.min.js') }}"></script>
 
 
 </head>
@@ -53,14 +53,14 @@
     <div class="sidebar">
         <div class="logo-details mt-4 mb-3">
             <div class="img_wrapper">
-                <img height="40px" class="" src="{{ asset('assets/uploads/logo/' . get_settings('white_logo')) }}"
+                <img height="40px" class="" src="{{ asset('../assets/uploads/logo/' . get_settings('white_logo')) }}"
                     alt="" />
             </div>
             <span class="logo_name">{{ get_settings('navbar_title') }}</span>
         </div>
         <div class="closeIcon">
             <span>
-                <img src="{{ asset('assets/images/close.svg') }}">
+                <img src="{{ asset('../assets/images/close.svg') }}">
             </span>
         </div>
         <ul class="nav-links">
@@ -1009,40 +1009,40 @@
 
     <!--Main Jquery-->
     <!--Bootstrap bundle with popper-->
-    <script src="{{ asset('assets/vendors/bootstrap-5.1.3/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('assets/js/swiper-bundle.min.js') }}"></script>
+    <script src="{{ asset('../assets/vendors/bootstrap-5.1.3/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('../assets/js/swiper-bundle.min.js') }}"></script>
     <!-- Datepicker js -->
-    <script src="{{ asset('assets/js/moment.min.js') }}"></script>
-    <script src="{{ asset('assets/js/daterangepicker.min.js') }}"></script>
+    <script src="{{ asset('../assets/js/moment.min.js') }}"></script>
+    <script src="{{ asset('../assets/js/daterangepicker.min.js') }}"></script>
     <!-- Select2 js -->
-    <script src="{{ asset('assets/js/select2.min.js') }}"></script>
+    <script src="{{ asset('../assets/js/select2.min.js') }}"></script>
 
     <!--Custom Script-->
-    <script src="{{ asset('assets/js/script.js') }}"></script>
+    <script src="{{ asset('../assets/js/script.js') }}"></script>
 
     <!-- Calender js -->
-    <script src="{{ asset('assets/calender/main.js') }}"></script>
-    <script src="{{ asset('assets/calender/locales-all.js') }}"></script>
+    <script src="{{ asset('../assets/calender/main.js') }}"></script>
+    <script src="{{ asset('../assets/calender/locales-all.js') }}"></script>
 
     <!-- Dragula js -->
-    <script src="{{ asset('assets/js/dragula.min.js') }}"></script>
-    <script src="{{ asset('assets/js/onDomChange.js') }}"></script>
-    <script src="{{ asset('assets/js/Sortable.min.js') }}"></script>
-    <script src="{{ asset('assets/js/jquery-sortable.js') }}"></script>
+    <script src="{{ asset('../assets/js/dragula.min.js') }}"></script>
+    <script src="{{ asset('../assets/js/onDomChange.js') }}"></script>
+    <script src="{{ asset('../assets/js/Sortable.min.js') }}"></script>
+    <script src="{{ asset('../assets/js/jquery-sortable.js') }}"></script>
     <!-- SummerNote Js -->
-    <script src="{{ asset('assets/js/summernote-lite.min.js') }}"></script>
+    <script src="{{ asset('../assets/js/summernote-lite.min.js') }}"></script>
 
     <!--Toaster Script-->
-    <script src="{{ asset('assets/js/toastr.min.js') }}"></script>
+    <script src="{{ asset('../assets/js/toastr.min.js') }}"></script>
 
     <!--pdf Script-->
-    <script src="{{ asset('assets/js/pdfmake.min.js') }}"></script>
-    <script src="{{ asset('assets/js/html2pdf.bundle.min.js') }}"></script>
+    <script src="{{ asset('../assets/js/pdfmake.min.js') }}"></script>
+    <script src="{{ asset('../assets/js/html2pdf.bundle.min.js') }}"></script>
 
     <!--html2canvas Script-->
-    <script src="{{ asset('assets/js/html2canvas.min.js') }}"></script>
+    <script src="{{ asset('../assets/js/html2canvas.min.js') }}"></script>
     <!---Image Gallery--->
-    <script src="/ekattor8_v9/Ekattor8/public/assets/js/lightbox-plus-jquery.js"></script>
+    <script src="/ekattor8_v9/Ekattor8/public/../assets/js/lightbox-plus-jquery.js"></script>
     <script>
         // JavaScript to handle language selection
         document.addEventListener('DOMContentLoaded', function() {

@@ -51,7 +51,7 @@ class AssetVersionContext extends InstanceContext
         ];
 
         $this->uri = '/Services/' . \rawurlencode($serviceSid)
-        .'/Assets/' . \rawurlencode($assetSid)
+        .'/../assets/' . \rawurlencode($assetSid)
         .'/Versions/' . \rawurlencode($sid)
         .'';
     }

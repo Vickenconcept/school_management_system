@@ -10,18 +10,21 @@
   <meta content="" name="description" />
   <meta content="" name="author" />
   <!-- all the css files -->
-  <link rel="shortcut icon" href="<?php echo e(asset('assets/uploads/logo/'.get_settings('favicon'))); ?>" />
+
+  <link rel="shortcut icon" href="<?php echo e(asset('../assets/uploads/logo/'.get_settings('favicon'))); ?>" />
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" type="text/css" href="<?php echo e(asset('assets/vendors/bootstrap-5.1.3/css/bootstrap.min.css')); ?>">
+  <link rel="stylesheet" type="text/css" href="<?php echo e(asset('../assets/vendors/bootstrap-5.1.3/css/bootstrap.min.css')); ?>">
 
   <!--Custom css-->
-  <link rel="stylesheet" type="text/css" href="<?php echo e(asset('assets/css/main.css')); ?>">
-    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('assets/css/style.css')); ?>">
+  <link rel="stylesheet" type="text/css" href="<?php echo e(asset('../assets/css/main.css')); ?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('../assets/css/style.css')); ?>">
+    
+  
 
-  <link rel="stylesheet" type="text/css" href="<?php echo e(asset('assets/vendors/bootstrap-icons-1.8.1/bootstrap-icons.css')); ?>">
+  <link rel="stylesheet" type="text/css" href="<?php echo e(asset('../assets/vendors/bootstrap-icons-1.8.1/bootstrap-icons.css')); ?>">
 
   <!--Toaster css-->
-  <link rel="stylesheet" type="text/css" href="<?php echo e(asset('assets/css/toastr.min.css')); ?>"/>
+  <link rel="stylesheet" type="text/css" href="<?php echo e(asset('../assets/css/toastr.min.css')); ?>"/>
 
   
   
@@ -36,17 +39,7 @@
 
     <?php echo $__env->make('external_plugin', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
-    <!--Main Jquery-->
-    <script src="<?php echo e(asset('assets/vendors/jquery/jquery-3.6.0.min.js')); ?>"></script>
-    <!--Bootstrap bundle with popper-->
-    <script src="<?php echo e(asset('assets/vendors/bootstrap-5.1.3/js/bootstrap.bundle.min.js')); ?>"></script>
-
-    <!--Custom Script-->
-    <script src="<?php echo e(asset('assets/js/script.js')); ?>"></script>
-    <script src="<?php echo e(asset('assets/js/custom.js')); ?>"></script>
-
-    <!--Toaster Script-->
-    <script src="<?php echo e(asset('assets/js/toastr.min.js')); ?>"></script>
+    
 
     <script>
         

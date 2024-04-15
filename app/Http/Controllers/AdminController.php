@@ -240,9 +240,7 @@ class AdminController extends Controller
         } else {
             return redirect()->back()->with('error', 'Email was already taken.');
         }
-        // if (!empty(get_settings('smtp_user')) && (get_settings('smtp_pass')) && (get_settings('smtp_host')) && (get_settings('smtp_port'))) {
-        //     Mail::to($data['email'])->send(new NewUserEmail($data));
-        // }
+        
         return redirect()->back()->with('message', 'You have successfully add user.');
     }
 
@@ -403,7 +401,6 @@ class AdminController extends Controller
             return redirect()->back()->with('error', 'Email was already taken.');
         }
         // if (!empty(get_settings('smtp_user')) && (get_settings('smtp_pass')) && (get_settings('smtp_host')) && (get_settings('smtp_port'))) {
-        //     dd('git it');
         //     Mail::to($data['email'])->send(new NewUserEmail($data));
         // }
         return redirect()->back()->with('message', 'You have successfully add teacher.');
@@ -544,9 +541,7 @@ class AdminController extends Controller
         } else {
             return redirect()->back()->with('error', 'Email was already taken.');
         }
-        // if (!empty(get_settings('smtp_user')) && (get_settings('smtp_pass')) && (get_settings('smtp_host')) && (get_settings('smtp_port'))) {
-        //     Mail::to($data['email'])->send(new NewUserEmail($data));
-        // }
+        
         return redirect()->back()->with('message', 'You have successfully add accountant.');
     }
 
@@ -686,9 +681,7 @@ class AdminController extends Controller
         } else {
             return redirect()->back()->with('error', 'Email was already taken.');
         }
-        // if (!empty(get_settings('smtp_user')) && (get_settings('smtp_pass')) && (get_settings('smtp_host')) && (get_settings('smtp_port'))) {
-        //     Mail::to($data['email'])->send(new NewUserEmail($data));
-        // }
+        
         return redirect()->back()->with('message', 'You have successfully add librarian.');
     }
 
@@ -995,7 +988,7 @@ class AdminController extends Controller
 
             $imageName = time() . '.' . $data['photo']->extension();
 
-            $data['photo']->move(public_path('assets/uploads/user-images/'), $imageName);
+            $data['photo']->move(public_path('../assets/uploads/user-images/'), $imageName);
 
             $photo  = $imageName;
         } else {
@@ -1029,9 +1022,7 @@ class AdminController extends Controller
         } else {
             return redirect()->back()->with('error', 'Email was already taken.');
         }
-        // if (!empty(get_settings('smtp_user')) && (get_settings('smtp_pass')) && (get_settings('smtp_host')) && (get_settings('smtp_port'))) {
-        //     Mail::to($data['email'])->send(new NewUserEmail($data));
-        // }
+        
         return redirect()->back()->with('message', 'You have successfully add student.');
     }
 
@@ -1399,10 +1390,10 @@ class AdminController extends Controller
             $extension = $file->getClientOriginalExtension(); //Get extension of uploaded file
 
             // Upload file
-            $file->move(public_path('assets/csv_file/'), $filename);
+            $file->move(public_path('../assets/csv_file/'), $filename);
 
             // In case the uploaded file path is to be stored in the database
-            $filepath = url('public/assets/csv_file/' . $filename);
+            $filepath = url('public/../assets/csv_file/' . $filename);
         }
 
         if (($handle = fopen($filepath, 'r')) !== FALSE) { // Check the resource is valid
@@ -2009,9 +2000,9 @@ class AdminController extends Controller
             $filename = $file->getClientOriginalName();
             $extension = $file->getClientOriginalExtension(); //Get extension of uploaded file
 
-            $file->move(public_path('assets/uploads/syllabus/'), $filename);
+            $file->move(public_path('../assets/uploads/syllabus/'), $filename);
 
-            $filepath = asset('assets/uploads/syllabus/' . $filename);
+            $filepath = asset('../assets/uploads/syllabus/' . $filename);
         }
 
         Syllabus::create([
@@ -2046,9 +2037,9 @@ class AdminController extends Controller
             $filename = $file->getClientOriginalName();
             $extension = $file->getClientOriginalExtension(); //Get extension of uploaded file
 
-            $file->move(public_path('assets/uploads/syllabus/'), $filename);
+            $file->move(public_path('../assets/uploads/syllabus/'), $filename);
 
-            $filepath = asset('assets/uploads/syllabus/' . $filename);
+            $filepath = asset('../assets/uploads/syllabus/' . $filename);
         }
 
         Syllabus::where('id', $id)->update([
@@ -3425,7 +3416,7 @@ class AdminController extends Controller
 
             $imageName = time() . '.' . $data['image']->extension();
 
-            $data['image']->move(public_path('assets/uploads/noticeboard/'), $imageName);
+            $data['image']->move(public_path('../assets/uploads/noticeboard/'), $imageName);
 
             $data['image']  = $imageName;
         }
@@ -3455,7 +3446,7 @@ class AdminController extends Controller
 
             $imageName = time() . '.' . $data['image']->extension();
 
-            $data['image']->move(public_path('assets/uploads/noticeboard/'), $imageName);
+            $data['image']->move(public_path('../assets/uploads/noticeboard/'), $imageName);
 
             $data['image']  = $imageName;
         }
@@ -3878,7 +3869,7 @@ class AdminController extends Controller
 
             $ext = $request->off_pay_ins_file->getClientOriginalExtension();
             $newFileName = random(8) . '.' . $ext;
-            $request->off_pay_ins_file->move(public_path() . '/assets/uploads/offline_payment/', $newFileName); // This will save file in a folder.  
+            $request->off_pay_ins_file->move(public_path() . '/../assets/uploads/offline_payment/', $newFileName); // This will save file in a folder.  
             $school_data->off_pay_ins_file = $newFileName;
             $school_data->save();
         }
@@ -4196,7 +4187,7 @@ class AdminController extends Controller
                 $extension = $file->getClientOriginalExtension(); //Get extension of uploaded file
 
 
-                $file->move(public_path('assets/uploads/offline_payment'), $filename);
+                $file->move(public_path('../assets/uploads/offline_payment'), $filename);
                 $data['document_image'] = $filename;
             } else {
                 $data['document_image'] = '';
@@ -4237,7 +4228,7 @@ class AdminController extends Controller
                 $extension = $file->getClientOriginalExtension(); //Get extension of uploaded file
 
 
-                $file->move(public_path('assets/uploads/offline_payment'), $filename);
+                $file->move(public_path('../assets/uploads/offline_payment'), $filename);
                 $data['document_image'] = $filename;
             } else {
                 $data['document_image'] = '';

@@ -69,7 +69,7 @@
                          </div>
                          <div class="ds_item_icon">
                            <img
-                             src="{{asset('assets/images/Student_icon.png')}}"
+                             src="{{asset('../assets/images/Student_icon.png')}}"
                              alt=""
                            />
                          </div>
@@ -92,7 +92,7 @@
                          </div>
                          <div class="ds_item_icon">
                            <img
-                             src="{{asset('assets/images/Teacher_icon.png')}}"
+                             src="{{asset('../assets/images/Teacher_icon.png')}}"
                              alt=""
                            />
                          </div>
@@ -115,7 +115,7 @@
                          </div>
                          <div class="ds_item_icon">
                            <img
-                             src="{{asset('assets/images/Parents_icon.png')}}"
+                             src="{{asset('../assets/images/Parents_icon.png')}}"
                              alt=""
                            />
                          </div>
@@ -142,7 +142,7 @@
                          </div>
                          <div class="ds_item_icon">
                            <img
-                             src="{{asset('assets/images/Staff_icon.png')}}"
+                             src="{{asset('../assets/images/Staff_icon.png')}}"
                              alt=""
                            />
                          </div>
@@ -196,9 +196,9 @@
    
    
    <!-- Resources -->
-   <script src="{{asset('assets/amchart/index.js')}}"></script>
-   <script src="{{asset('assets/amchart/xy.js')}}"></script>
-   <script src="{{asset('assets/amchart/animated.js')}}"></script>
+   <script src="{{asset('../assets/amchart/index.js')}}"></script>
+   <script src="{{asset('../assets/amchart/xy.js')}}"></script>
+   <script src="{{asset('../assets/amchart/animated.js')}}"></script>
    
    <!-- Chart code -->
    <script>

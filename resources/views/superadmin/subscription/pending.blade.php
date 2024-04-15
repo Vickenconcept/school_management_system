@@ -122,7 +122,7 @@ $subscription = Subscription::latest()->first();
 		          </div>
 		          <div class="att-banner-img order-0 order-md-1">
 		            <img
-		              src="{{ asset('assets/images/attendance-report-banner.png') }}"
+		              src="{{ asset('../assets/images/attendance-report-banner.png') }}"
 		              alt=""
 		            />
 		        </div>
@@ -164,10 +164,10 @@ $subscription = Subscription::latest()->first();
 
 										@if(in_array(strtolower($fileExtension), $allowedExtensions))
 											
-											<a href="{{ asset('assets/uploads/offline_payment/'.$payment_history->document_image) }}" download 	data-lightbox="models" data-title="{{ $payment_history->document_image }}" > <strong>{{ $payment_history->document_image }} </strong>
+											<a href="{{ asset('../assets/uploads/offline_payment/'.$payment_history->document_image) }}" download 	data-lightbox="models" data-title="{{ $payment_history->document_image }}" > <strong>{{ $payment_history->document_image }} </strong>
 											
 										@else
-											<a href="{{ asset('assets/uploads/offline_payment/'.$payment_history->document_image) }}" download  data-title="{{ $payment_history->document_image }}" > <strong>{{ $payment_history->document_image }} </strong>
+											<a href="{{ asset('../assets/uploads/offline_payment/'.$payment_history->document_image) }}" download  data-title="{{ $payment_history->document_image }}" > <strong>{{ $payment_history->document_image }} </strong>
 										@endif
 									@endif
 	                							
@@ -212,7 +212,7 @@ $subscription = Subscription::latest()->first();
 			</div>
 			@else
 				<div class="empty_box center">
-                    <img class="mb-3" width="150px" src="{{ asset('assets/images/empty_box.png') }}" />
+                    <img class="mb-3" width="150px" src="{{ asset('../assets/images/empty_box.png') }}" />
                     <br>
                 </div>
 			@endif
@@ -230,7 +230,7 @@ $subscription = Subscription::latest()->first();
       </div>
       <div class="att-banner-img order-0 order-md-1">
         <img
-          src="{{ asset('assets/images/attendance-report-banner.png') }}"
+          src="{{ asset('../assets/images/attendance-report-banner.png') }}"
           alt=""
         />
       </div>
@@ -254,7 +254,7 @@ $subscription = Subscription::latest()->first();
 	        			<td>{{ $payment_history->amount }}</td>
 	        			<td>{{ ucwords($payment_history->payment_type) }}</td>
 	        			<td class="link">
-	        					<a href="{{ asset('assets/uploads/offline_payment/'.$payment_history->document_image) }}" download> <strong>{{ $payment_history->document_image }} </strong></a>
+	        					<a href="{{ asset('../assets/uploads/offline_payment/'.$payment_history->document_image) }}" download> <strong>{{ $payment_history->document_image }} </strong></a>
 	        			</td>
 	        			<td>
 	        				<span class="eBadge ebg-info">{{ get_phrase('Pending') }}</span>

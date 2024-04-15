@@ -22,7 +22,7 @@
             <div class="col-lg-2 col-md-6 col-sm-6 col-5">
                 <!-- Logo  -->
                 <div class="logo">
-                    <a href="#"><img src="{{ asset('assets/uploads/logo/'.get_settings('front_logo')) }}" width="200px"
+                    <a href="#"><img src="{{ asset('../assets/uploads/logo/'.get_settings('front_logo')) }}" width="200px"
                         alt="..."></a> 
                 </div>
             </div>
@@ -37,7 +37,7 @@
                         <li class="nav-item"><a class="nav-link" href="#contact">{{ get_phrase('Contact') }}</a></li>
                     </ul>
                 </nav>
-                <a class="small-device-show" href="#"><img src="{{ asset('frontend/assets/image/logo.png') }}" alt="logo"></a>
+                <a class="small-device-show" href="#"><img src="{{ asset('frontend/../assets/image/logo.png') }}" alt="logo"></a>
                 <span class="crose-icon"><i class="fa-solid fa-xmark"></i></span>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6 col-7">
@@ -226,8 +226,8 @@
 <!--  Bannar Area Start  -->
 <section class="bannar-area">
     <!-- Safe -->
-    <span class="safe-top"><img src="{{ asset('frontend/assets/image/safe-2.png') }}" alt="img"></span>
-    <span class="safe-left"><img src="{{ asset('frontend/assets/image/safe-1.png') }}" alt="img"></span>
+    <span class="safe-top"><img src="{{ asset('frontend/../assets/image/safe-2.png') }}" alt="img"></span>
+    <span class="safe-left"><img src="{{ asset('frontend/../assets/image/safe-1.png') }}" alt="img"></span>
     <div class="container-xl">
         <div class="row">
             <div class="col-lg-6">
@@ -250,7 +250,7 @@
             </div>
             <div class="col-lg-6">
                 <div class="bananr-right-img">
-                    <img src="{{ asset('frontend/assets/image/bannar-image.png') }}" alt="image">
+                    <img src="{{ asset('frontend/../assets/image/bannar-image.png') }}" alt="image">
                 </div>
             </div>
         </div>
@@ -400,7 +400,7 @@
                     </div>
                     <div class="contact-right">
                         <div class="envolepe-messeage">
-                            <img src="{{ asset('frontend/assets/image/envelope.png') }}" alt="image">
+                            <img src="{{ asset('frontend/../assets/image/envelope.png') }}" alt="image">
                         </div>
                     </div>
                 </div>
@@ -418,7 +418,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
                     <div class="footer-items">
                         <div class="footer-logo">
-                            <a href="#"><img src="{{ asset('assets/uploads/logo/'.get_settings('light_logo')) }}" alt="image"></a>
+                            <a href="#"><img src="{{ asset('../assets/uploads/logo/'.get_settings('light_logo')) }}" alt="image"></a>
                         </div>
                         <p>{{ get_settings('frontend_footer_text') }}</p>
                     </div>

@@ -204,8 +204,8 @@ class InstallController extends Controller
         // Set line to collect lines that wrap
         $templine = '';
         // Read in entire file
-        // $lines = file('./public/assets/install.sql');
-        $lines = file(base_path('public/assets/install.sql'));
+        // $lines = file('./public/../assets/install.sql');
+        $lines = file(base_path('public/../assets/install.sql'));
         // Loop through each line
         foreach ($lines as $line) {
         // Skip it if it's a comment

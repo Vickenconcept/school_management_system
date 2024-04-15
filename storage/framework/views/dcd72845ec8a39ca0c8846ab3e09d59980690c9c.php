@@ -1,4 +1,4 @@
-<script src="<?php echo e(asset('assets/vendors/jquery-form/jquery.form.min.js')); ?>"></script>
+<script src="<?php echo e(asset('../assets/vendors/jquery-form/jquery.form.min.js')); ?>"></script>
 
 <script>
 	 var formElement;

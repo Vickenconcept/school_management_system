@@ -31,22 +31,22 @@ if(count($number_of_activated_payment_gateway)==1)
     <meta content="" name="description" />
     <meta content="" name="author" />
     <!-- all the css files -->
-    <link rel="shortcut icon" href="{{ asset('assets/images/logo.png') }}">
+    <link rel="shortcut icon" href="{{ asset('../assets/images/logo.png') }}">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendors/bootstrap-5.1.3/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('../assets/vendors/bootstrap-5.1.3/css/bootstrap.min.css') }}">
 
     <!--Custom css-->
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/swiper-bundle.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('../assets/css/swiper-bundle.min.css') }}">
 
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/custom.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('../assets/css/custom.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('../assets/css/style.css') }}" />
     <!-- Datepicker css -->
 
-    <link rel="stylesheet" href="{{ asset('assets/css/daterangepicker.css') }}" />
+    <link rel="stylesheet" href="{{ asset('../assets/css/daterangepicker.css') }}" />
     <!-- Select2 css -->
-    <link rel="stylesheet" href="{{ asset('assets/css/select2.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('../assets/css/select2.min.css') }}" />
 
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendors/bootstrap-icons-1.8.1/bootstrap-icons.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('../assets/vendors/bootstrap-icons-1.8.1/bootstrap-icons.css') }}">
 
 <body>
 
@@ -75,7 +75,7 @@ if(count($number_of_activated_payment_gateway)==1)
                         <div class="payment_gateway_option d-flex align-items-center">
                             <div class="logo">
                                 @php
-                                $image_logo="assets/images/".$value['name'].".png";
+                                $image_logo="../assets/images/".$value['name'].".png";
                                 @endphp
                                 <img src="{{ asset($image_logo) }}" alt="" />
                             </div>
@@ -101,7 +101,7 @@ if(count($number_of_activated_payment_gateway)==1)
                         <div class="payment_gateway_option d-flex align-items-center">
                             <div class="logo">
                                 @php
-                                $image_logo="assets/images/offline.png";
+                                $image_logo="../assets/images/offline.png";
                                 @endphp
                                 <img src="{{ asset($image_logo) }}" alt="" />
                             </div>
@@ -227,11 +227,11 @@ if(count($number_of_activated_payment_gateway)==1)
 
                                     @if(in_array(strtolower($fileExtension), $allowedExtensions))
                                         
-                                        <a href="{{ asset('assets/uploads/offline_payment/'. $school_data->off_pay_ins_file) }}" download><img src="{{ asset('assets/uploads/offline_payment/'. $school_data->off_pay_ins_file) }}" width="539px" ></a>
+                                        <a href="{{ asset('../assets/uploads/offline_payment/'. $school_data->off_pay_ins_file) }}" download><img src="{{ asset('../assets/uploads/offline_payment/'. $school_data->off_pay_ins_file) }}" width="539px" ></a>
                                         
                                     @else
                                     <span class="badge bg-success m-1">
-                                        <a style="color:#fff; font-size: 14px;" href="{{ asset('assets/uploads/offline_payment/'.$school_data->off_pay_ins_file) }}" download>Download the instruction <i class="bi bi-file-earmark-richtext-fill"></i></a>
+                                        <a style="color:#fff; font-size: 14px;" href="{{ asset('../assets/uploads/offline_payment/'.$school_data->off_pay_ins_file) }}" download>Download the instruction <i class="bi bi-file-earmark-richtext-fill"></i></a>
                                     </span>
                                     @endif
                                 @endif
@@ -250,18 +250,18 @@ if(count($number_of_activated_payment_gateway)==1)
 
 
 
-        <script src="{{ asset('assets/vendors/jquery/jquery-3.6.0.min.js') }}"></script>
-        <script src="{{ asset('assets/vendors/bootstrap-5.1.3/js/bootstrap.bundle.min.js') }}"></script>
+        <script src="{{ asset('../assets/vendors/jquery/jquery-3.6.0.min.js') }}"></script>
+        <script src="{{ asset('../assets/vendors/bootstrap-5.1.3/js/bootstrap.bundle.min.js') }}"></script>
 
-        <script src="{{ asset('assets/js/swiper-bundle.min.js') }}"></script>
+        <script src="{{ asset('../assets/js/swiper-bundle.min.js') }}"></script>
 
-        <script src="{{ asset('assets/js/moment.min.js') }}"></script>
-        <script src="{{ asset('assets/js/daterangepicker.min.js') }}"></script>
+        <script src="{{ asset('../assets/js/moment.min.js') }}"></script>
+        <script src="{{ asset('../assets/js/daterangepicker.min.js') }}"></script>
         <!-- Select2 js -->
-        <script src="{{ asset('assets/js/select2.min.js') }}"></script>
+        <script src="{{ asset('../assets/js/select2.min.js') }}"></script>
 
         <!--Custom Script-->
-        <script src="{{ asset('assets/js/script.js') }}"></script>
+        <script src="{{ asset('../assets/js/script.js') }}"></script>
 </body>
 
 </html>

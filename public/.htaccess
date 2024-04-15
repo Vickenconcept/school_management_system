@@ -19,6 +19,7 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
 </IfModule>
+
 # Options -MultiViews -Indexes
  
 # RewriteEngine On
@@ -42,3 +43,5 @@
 # RewriteCond %{REQUEST_FILENAME} !-f
 # RewriteCond %{REQUEST_URI} !^/public/
 # RewriteRule ^(css|js|images|trainer-cv)/(.*)$ public/$1/$2 [L,NC]
+
+

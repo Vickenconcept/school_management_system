@@ -1,6 +1,6 @@
 
     <!---Icon Piker -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/font-awesome-icon-picker/fontawesome-iconpicker.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('../assets/css/font-awesome-icon-picker/fontawesome-iconpicker.min.css') }}">
 <form method="POST" enctype="multipart/form-data" class="d-block ajaxForm" action="{{ route('superadmin.system.frontendFeaturesadd') }}">
     @csrf 
     <div class="form-row">
@@ -21,7 +21,7 @@
     <button type="submit" class="btn-form">{{ get_phrase('Submit') }}</button>
 </form>
 <!--Fontawsome Icon-Piker-->
-<script src="{{ asset('assets/js/font-awesome-icon-picker/fontawesome-iconpicker.min.js') }}"></script>
+<script src="{{ asset('../assets/js/font-awesome-icon-picker/fontawesome-iconpicker.min.js') }}"></script>
 
 <script>
         // fontawsome Icon Piker

@@ -99,7 +99,7 @@ use App\Models\School;
 		          </div>
 		          <div class="att-banner-img order-0 order-md-1">
 		            <img
-		              src="{{ asset('assets/images/attendance-report-banner.png') }}"
+		              src="{{ asset('../assets/images/attendance-report-banner.png') }}"
 		              alt=""
 		            />
 		          </div>
@@ -134,7 +134,7 @@ use App\Models\School;
 		                			<td>
 		                				{{ $subscription->payment_method }}
 		                				@if($subscription->payment_method == 'Offline')
-		                				<a href="{{ asset('assets/uploads/offline_payment/'.$offline_tr_keys->document_file) }}" class="btn btn-light-success py-1 px-2 text-14px mt-1" data-bs-toggle="tooltip" title="Document file"><i class="bi bi-file-earmark-richtext-fill"></i></a>
+		                				<a href="{{ asset('../assets/uploads/offline_payment/'.$offline_tr_keys->document_file) }}" class="btn btn-light-success py-1 px-2 text-14px mt-1" data-bs-toggle="tooltip" title="Document file"><i class="bi bi-file-earmark-richtext-fill"></i></a>
 		                				@endif
 		                			</td>
 		                			<td>{{ date('d-M-Y', $subscription->date_added) }}</td>
@@ -154,7 +154,7 @@ use App\Models\School;
 			</div>
 			@else
 			<div class="empty_box center">
-                <img class="mb-3" width="150px" src="{{ asset('assets/images/empty_box.png') }}" />
+                <img class="mb-3" width="150px" src="{{ asset('../assets/images/empty_box.png') }}" />
                 <br>
                 {{ get_phrase('No date found') }}
             </div>

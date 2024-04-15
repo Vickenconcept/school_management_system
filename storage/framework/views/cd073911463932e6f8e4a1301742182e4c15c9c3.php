@@ -12,31 +12,31 @@
     <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>">
 
     <!-- all the css files -->
-    <link rel="shortcut icon" href="<?php echo e(asset('assets/uploads/logo/' . get_settings('favicon'))); ?>" />
+    <link rel="shortcut icon" href="<?php echo e(asset('../assets/uploads/logo/' . get_settings('favicon'))); ?>" />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('assets/vendors/bootstrap-5.1.3/css/bootstrap.min.css')); ?>" />
+    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('../assets/vendors/bootstrap-5.1.3/css/bootstrap.min.css')); ?>" />
 
     <!--Custom css-->
-    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('assets/css/swiper-bundle.min.css')); ?>" />
-    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('assets/css/main.css')); ?>" />
-    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('assets/css/custom.css')); ?>" />
-    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('assets/css/style.css')); ?>" />
+    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('../assets/css/swiper-bundle.min.css')); ?>" />
+    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('../assets/css/main.css')); ?>" />
+    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('../assets/css/custom.css')); ?>" />
+    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('../assets/css/style.css')); ?>" />
     <!-- Datepicker css -->
-    <link rel="stylesheet" href="<?php echo e(asset('assets/css/daterangepicker.css')); ?>" />
+    <link rel="stylesheet" href="<?php echo e(asset('../assets/css/daterangepicker.css')); ?>" />
     <!-- Select2 css -->
-    <link rel="stylesheet" href="<?php echo e(asset('assets/css/select2.min.css')); ?>" />
+    <link rel="stylesheet" href="<?php echo e(asset('../assets/css/select2.min.css')); ?>" />
 
     <link rel="stylesheet" type="text/css"
-        href="<?php echo e(asset('assets/vendors/bootstrap-icons-1.8.1/bootstrap-icons.css')); ?>" />
+        href="<?php echo e(asset('../assets/vendors/bootstrap-icons-1.8.1/bootstrap-icons.css')); ?>" />
 
     <!--Toaster css-->
-    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('assets/css/toastr.min.css')); ?>" />
+    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('../assets/css/toastr.min.css')); ?>" />
 
     <!-- Calender css -->
-    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('assets/calender/main.css')); ?>" />
+    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('../assets/calender/main.css')); ?>" />
 
     <!--Main Jquery-->
-    <script src="<?php echo e(asset('assets/vendors/jquery/jquery-3.6.0.min.js')); ?>"></script>
+    <script src="<?php echo e(asset('../assets/vendors/jquery/jquery-3.6.0.min.js')); ?>"></script>
 </head>
 
 <body>
@@ -49,14 +49,14 @@
     <div class="sidebar">
         <div class="logo-details mt-4 mb-3">
             <div class="img_wrapper">
-                <img height="40px" class="" src="<?php echo e(asset('assets/uploads/logo/' . get_settings('white_logo'))); ?>"
+                <img height="40px" class="" src="<?php echo e(asset('../assets/uploads/logo/' . get_settings('white_logo'))); ?>"
                     alt="" />
             </div>
             <span class="logo_name"><?php echo e(get_settings('navbar_title')); ?></span>
         </div>
         <div class="closeIcon">
             <span>
-                <img src="<?php echo e(asset('assets/images/close.svg')); ?>">
+                <img src="<?php echo e(asset('../assets/images/close.svg')); ?>">
             </span>
         </div>
         <ul class="nav-links">
@@ -527,31 +527,31 @@
     <?php echo $__env->make('jquery-form', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
     <!--Bootstrap bundle with popper-->
-    <script src="<?php echo e(asset('assets/vendors/bootstrap-5.1.3/js/bootstrap.bundle.min.js')); ?>"></script>
-    <script src="<?php echo e(asset('assets/js/swiper-bundle.min.js')); ?>"></script>
+    <script src="<?php echo e(asset('../assets/vendors/bootstrap-5.1.3/js/bootstrap.bundle.min.js')); ?>"></script>
+    <script src="<?php echo e(asset('../assets/js/swiper-bundle.min.js')); ?>"></script>
     <!-- Datepicker js -->
-    <script src="<?php echo e(asset('assets/js/moment.min.js')); ?>"></script>
-    <script src="<?php echo e(asset('assets/js/daterangepicker.min.js')); ?>"></script>
+    <script src="<?php echo e(asset('../assets/js/moment.min.js')); ?>"></script>
+    <script src="<?php echo e(asset('../assets/js/daterangepicker.min.js')); ?>"></script>
     <!-- Select2 js -->
-    <script src="<?php echo e(asset('assets/js/select2.min.js')); ?>"></script>
+    <script src="<?php echo e(asset('../assets/js/select2.min.js')); ?>"></script>
 
     <!--Custom Script-->
-    <script src="<?php echo e(asset('assets/js/script.js')); ?>"></script>
-    <script src="<?php echo e(asset('assets/js/custom.js')); ?>"></script>
+    <script src="<?php echo e(asset('../assets/js/script.js')); ?>"></script>
+    <script src="<?php echo e(asset('../assets/js/custom.js')); ?>"></script>
 
     <!-- Calender js -->
-    <script src="<?php echo e(asset('assets/calender/main.js')); ?>"></script>
-    <script src="<?php echo e(asset('assets/calender/locales-all.js')); ?>"></script>
+    <script src="<?php echo e(asset('../assets/calender/main.js')); ?>"></script>
+    <script src="<?php echo e(asset('../assets/calender/locales-all.js')); ?>"></script>
 
     <!--Toaster Script-->
-    <script src="<?php echo e(asset('assets/js/toastr.min.js')); ?>"></script>
+    <script src="<?php echo e(asset('../assets/js/toastr.min.js')); ?>"></script>
 
     <!--pdf Script-->
-    <script src="<?php echo e(asset('assets/js/pdfmake.min.js')); ?>"></script>
-    <script src="<?php echo e(asset('assets/js/html2pdf.bundle.min.js')); ?>"></script>
+    <script src="<?php echo e(asset('../assets/js/pdfmake.min.js')); ?>"></script>
+    <script src="<?php echo e(asset('../assets/js/html2pdf.bundle.min.js')); ?>"></script>
 
     <!--html2canvas Script-->
-    <script src="<?php echo e(asset('assets/js/html2canvas.min.js')); ?>"></script>
+    <script src="<?php echo e(asset('../assets/js/html2canvas.min.js')); ?>"></script>
 
     <script>
         // JavaScript to handle language selection

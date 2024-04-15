@@ -85,7 +85,7 @@
                          </div>
                          <div class="ds_item_icon">
                            <img
-                             src="<?php echo e(asset('assets/images/Teacher_icon.png')); ?>"
+                             src="<?php echo e(asset('../assets/images/Teacher_icon.png')); ?>"
                              alt=""
                            />
                          </div>
@@ -108,7 +108,7 @@
                          </div>
                          <div class="ds_item_icon">
                            <img
-                             src="<?php echo e(asset('assets/images/Parents_icon.png')); ?>"
+                             src="<?php echo e(asset('../assets/images/Parents_icon.png')); ?>"
                              alt=""
                            />
                          </div>
@@ -135,7 +135,7 @@
                          </div>
                          <div class="ds_item_icon">
                            <img
-                             src="<?php echo e(asset('assets/images/Staff_icon.png')); ?>"
+                             src="<?php echo e(asset('../assets/images/Staff_icon.png')); ?>"
                              alt=""
                            />
                          </div>
@@ -189,9 +189,9 @@
    
    
    <!-- Resources -->
-   <script src="<?php echo e(asset('assets/amchart/index.js')); ?>"></script>
-   <script src="<?php echo e(asset('assets/amchart/xy.js')); ?>"></script>
-   <script src="<?php echo e(asset('assets/amchart/animated.js')); ?>"></script>
+   <script src="<?php echo e(asset('../assets/amchart/index.js')); ?>"></script>
+   <script src="<?php echo e(asset('../assets/amchart/xy.js')); ?>"></script>
+   <script src="<?php echo e(asset('../assets/amchart/animated.js')); ?>"></script>
    
    <!-- Chart code -->
    <script>

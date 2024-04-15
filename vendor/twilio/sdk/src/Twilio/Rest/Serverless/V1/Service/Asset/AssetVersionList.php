@@ -49,7 +49,7 @@ class AssetVersionList extends ListResource
         ];
 
         $this->uri = '/Services/' . \rawurlencode($serviceSid)
-        .'/Assets/' . \rawurlencode($assetSid)
+        .'/../assets/' . \rawurlencode($assetSid)
         .'/Versions';
     }
 
