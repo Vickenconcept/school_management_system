@@ -1,4 +1,4 @@
-<script src="{{ asset('../assets/vendors/jquery-form/jquery.form.min.js') }}"></script>
+<script src="{{ asset('assets/vendors/jquery-form/jquery.form.min.js') }}"></script>
 
 <script>
 	 var formElement;

@@ -88,7 +88,7 @@ $active_session = get_school_settings(auth()->user()->school_id)->value('running
                         <?php foreach($syllabuses as $syllabus):?>
                             <tr>
                                 <td>{{ $syllabus['title'] }}</td>
-                                <td><a href="{{ asset('../assets/uploads/syllabus') }}/{{ $syllabus['file'] }}" class="btn btn-primary btn-sm bi bi-download" download>{{ get_phrase(' Download') }}</a></td>
+                                <td><a href="{{ asset('assets/uploads/syllabus') }}/{{ $syllabus['file'] }}" class="btn btn-primary btn-sm bi bi-download" download>{{ get_phrase(' Download') }}</a></td>
                                 <td>
                                     <?php $subjects = Subject::find($syllabus['subject_id']); ?>
                                     {{ $subjects->name }}
@@ -122,7 +122,7 @@ $active_session = get_school_settings(auth()->user()->school_id)->value('running
             </div>
             @else
             <div class="empty_box center">
-                <img class="mb-3" width="150px" src="{{ asset('../assets/images/empty_box.png') }}" />
+                <img class="mb-3" width="150px" src="{{ asset('assets/images/empty_box.png') }}" />
                 <br>
                 <span class="">{{ get_phrase('No data found') }}</span>
             </div>
