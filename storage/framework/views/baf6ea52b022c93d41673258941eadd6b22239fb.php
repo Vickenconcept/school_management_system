@@ -6,7 +6,7 @@
     width: inherit; 
     height: 100%; 
     position: fixed; 
-    background-image: url('public/assets/images/login.png'); 
+    background-image: url('public/../assets/images/login.png'); 
     background-size: cover; 
     background-position: center;
 }
@@ -23,7 +23,8 @@
             <div class="middle-elem">
                 <div class="primary-form">
                     <div class="form-logo mb-5">
-                        <img height="60px" src="<?php echo e(asset('../assets/uploads/logo/'.get_settings('dark_logo'))); ?>">
+                        
+                        <img height="60px" src="<?php echo e(asset('../assets/uploads/logo/16625324562.png')); ?>">
                     </div>
                     <div class="row">
                         <div class="col-12">

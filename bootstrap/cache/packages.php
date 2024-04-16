@@ -88,4 +88,15 @@
       'Flare' => 'Spatie\\LaravelIgnition\\Facades\\Flare',
     ),
   ),
+  'spatie/laravel-responsecache' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Spatie\\ResponseCache\\ResponseCacheServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'ResponseCache' => 'Spatie\\ResponseCache\\Facades\\ResponseCache',
+    ),
+  ),
 );
