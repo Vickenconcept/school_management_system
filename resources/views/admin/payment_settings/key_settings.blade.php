@@ -86,6 +86,19 @@
                                 @csrf 
 
                                 <div class="fpb-7">
+                                    <label class="eForm-label" for="example-fileinput">{{ get_phrase('School Account Number') }}</label>
+                                    <input class="form-control eForm-control-file" id="formFileSm" type="text" name="account_number">
+                                </div>
+                                <div class="fpb-7">
+                                    <label class="eForm-label" for="example-fileinput">{{ get_phrase('Bank Name') }}</label>
+                                    <input class="form-control eForm-control-file" id="formFileSm" type="text" name="bank_name">
+                                </div>
+                                <div class="fpb-7">
+                                    <label class="eForm-label" for="example-fileinput">{{ get_phrase('Account Name') }}</label>
+                                    <input class="form-control eForm-control-file" id="formFileSm" type="text" name="account_name">
+                                </div>
+
+                                <div class="fpb-7">
                                     <label for="system_title" class="eForm-label">{{ get_phrase('Offline Payment Instruction') }}</label>
                                     <textarea class="form-control eForm-control" id="off_pay_ins_text" name = "off_pay_ins_text">{{ $school_details->off_pay_ins_text }}</textarea>
                                 </div>

@@ -35,6 +35,7 @@ use App\Models\Expense;
 use App\Models\StudentFeeManager;
 use App\Models\Payments;
 use App\Models\PaymentMethods;
+use App\Models\School;
 use Cloudinary\Cloudinary;
 
 use Illuminate\Foundation\Auth\User as AuthUser;
@@ -129,10 +130,12 @@ class ParentController extends Controller
 
     public function FeePayment(Request $request, $id)
     {
-
         $fee_details = StudentFeeManager::where('id', $id)->first()->toArray();
         $user_info = User::where('id', auth()->user()->id)->first()->toArray();
-        return view('parent.payment.payment_gateway', ['fee_details' => $fee_details, 'user_info' => $user_info]);
+        
+        $school = School::where('id', auth()->user()->school_id)->first();
+
+        return view('parent.payment.payment_gateway', ['fee_details' => $fee_details, 'user_info' => $user_info, 'school' => $school]);
     }
 
     public function feeManagerExport($date_from = "", $date_to = "", $selected_status = "")

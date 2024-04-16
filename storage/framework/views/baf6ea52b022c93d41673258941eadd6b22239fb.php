@@ -6,7 +6,7 @@
     width: inherit; 
     height: 100%; 
     position: fixed; 
-    background-image: url('public/../assets/images/login.png'); 
+    background-image: url('public/assets/images/login.png'); 
     background-size: cover; 
     background-position: center;
 }

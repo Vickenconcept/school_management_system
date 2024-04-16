@@ -211,6 +211,13 @@ if(count($number_of_activated_payment_gateway)==1)
 
                     <input type="hidden" id="amount" class="form-control eForm-control" name="amount" value="{{ $fee_details['total_amount'] }}" readonly>
 
+                    <div>
+                      <p > {{ get_phrase('Document of your payment') }}</p>
+                      <p class="eForm-label"> {{ get_phrase('Bank Name:') }}  <b> {{ $school->bank_name }} </b></p>
+                      <p class="eForm-label"> {{ get_phrase('Account Name:') }} <b> {{ $school->account_name }} </b></p>
+                      <p class="eForm-label">{{ get_phrase('Account Number:') }} <b> {{ $school->account_number }} </b></p>
+                    </div>
+                    <br>
 
                     <div class="payable_document">
                         <label for="payableDocuemnt" class="eForm-label">

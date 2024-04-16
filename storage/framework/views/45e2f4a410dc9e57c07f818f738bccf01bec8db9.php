@@ -26,7 +26,7 @@
     <!-- Select2 css -->
     <link rel="stylesheet" href="<?php echo e(asset('../assets/css/select2.min.css')); ?>" />
     <!--Light box Image Gallery-->
-    <link rel="stylesheet" type="text/css" href="/ekattor8_v9/Ekattor8/public/../assets/css/lightbox.css">
+    <link rel="stylesheet" type="text/css" href="/ekattor8_v9/Ekattor8/public/assets/css/lightbox.css">
     <!-- SummerNote Css -->
     <link rel="stylesheet" href="<?php echo e(asset('../assets/css/summernote-lite.min.css')); ?>" />
 
@@ -1099,7 +1099,7 @@
     <!--html2canvas Script-->
     <script src="<?php echo e(asset('../assets/js/html2canvas.min.js')); ?>"></script>
     <!---Image Gallery--->
-    <script src="/ekattor8_v9/Ekattor8/public/../assets/js/lightbox-plus-jquery.js"></script>
+    <script src="/ekattor8_v9/Ekattor8/public/assets/js/lightbox-plus-jquery.js"></script>
     <script>
         // JavaScript to handle language selection
         document.addEventListener('DOMContentLoaded', function() {

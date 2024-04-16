@@ -46,6 +46,7 @@ use App\Mail\FreeEmail;
 use App\Mail\StudentsEmail;
 use App\Mail\NewUserEmail;
 use Cloudinary\Cloudinary;
+use FontLib\TrueType\Collection;
 use PDF;
 
 
@@ -3796,7 +3797,10 @@ class AdminController extends Controller
         $payment_gateways = PaymentMethods::where('school_id', auth()->user()->school_id)->get();
 
         $school_currency = School::where('id', auth()->user()->school_id)->first()->toArray();
-        $currencies = Currency::all()->toArray();
+        $currencies = collect([
+            ['code' =>"NGN"],
+        ]);
+        // $currencies = Currency::all()->toArray();
         $paypal = "";
         $paypal_keys = "";
         $stripe = "";
@@ -3867,15 +3871,19 @@ class AdminController extends Controller
 
             $old_image = $school_data->off_pay_ins_file;
 
-            $ext = $request->off_pay_ins_file->getClientOriginalExtension();
-            $newFileName = random(8) . '.' . $ext;
-            $request->off_pay_ins_file->move(public_path() . '/../assets/uploads/offline_payment/', $newFileName); // This will save file in a folder.  
-            $school_data->off_pay_ins_file = $newFileName;
-            $school_data->save();
+            $cloudinary = new Cloudinary();
+            $cloudinaryResponse = $cloudinary->uploadApi()->upload($request->off_pay_ins_file->getRealPath());
+            
+            $imageUrl = $cloudinaryResponse['secure_url'];
+
+            $school_data->off_pay_ins_file = stripslashes( $imageUrl);
         }
 
         School::where('id', auth()->user()->school_id)->update([
             'off_pay_ins_text' => $data['off_pay_ins_text'],
+            'account_number' => $data['account_number'],
+            'account_name' => $data['account_name'],
+            'bank_name' => $data['bank_name'],
 
         ]);
 

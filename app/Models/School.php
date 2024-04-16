@@ -30,5 +30,9 @@ class School extends Model
         'socialLogo3',
         'front_logo',
         'off_pay_ins_file',
+        'off_pay_ins_text',
+        'account_number',
+        'bank_name',
+        'account_name',
     ];
 }

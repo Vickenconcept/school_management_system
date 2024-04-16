@@ -31,6 +31,7 @@ use App\Models\Expense;
 use App\Models\StudentFeeManager;
 use App\Models\PaymentMethods;
 use App\Models\Payments;
+use App\Models\School;
 use Cloudinary\Cloudinary;
 use Illuminate\Foundation\Auth\User as AuthUser;
 
@@ -499,7 +500,8 @@ class StudentController extends Controller
 
         $fee_details = StudentFeeManager::where('id', $id)->first()->toArray();
         $user_info = User::where('id', $fee_details['student_id'])->first()->toArray();
-        return view('student.payment.payment_gateway', ['fee_details' => $fee_details, 'user_info' => $user_info]);
+        $school = School::where('id', auth()->user()->school_id)->first();
+        return view('student.payment.payment_gateway', ['fee_details' => $fee_details, 'user_info' => $user_info, 'school' => $school]);
     }
 
     public function studentFeeinvoice(Request $request, $id)

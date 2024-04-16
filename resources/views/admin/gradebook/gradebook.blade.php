@@ -139,7 +139,7 @@ $index = 0;
                             </table>
                         @else
                             <div class="empty_box center">
-                                <img class="mb-3" width="150px" src="{{ asset('assets/images/empty_box.png') }}" />
+                                <img class="mb-3" width="150px" src="{{ asset('../assets/images/empty_box.png') }}" />
                                 <br>
                             </div>
                         @endif

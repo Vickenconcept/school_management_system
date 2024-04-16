@@ -35,6 +35,10 @@ class CreateSchoolsTable extends Migration
             $table->text('socialLogo3')->nullable();
             $table->text('front_logo')->nullable();
             $table->text('off_pay_ins_file')->nullable();
+            $table->text('off_pay_ins_text')->nullable();
+            $table->string('account_number')->nullable();
+            $table->string('account_name')->nullable();
+            $table->string('bank_name')->nullable();
             
             $table->string('currency_position')->nullable();
             $table->integer('status');
