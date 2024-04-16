@@ -21,11 +21,11 @@ class CreateExamsTable extends Migration
             $table->string('ending_time');
             $table->float('total_marks');
             $table->string('status');
-            $table->integer('class_id');
-            $table->integer('subject_id');
-            $table->integer('school_id');
-            $table->integer('session_id');
-            $table->integer('room_number');
+            $table->integer('class_id')->index(); 
+            $table->integer('subject_id')->index(); 
+            $table->integer('school_id')->index(); 
+            $table->integer('session_id')->index(); 
+            $table->integer('room_number')->index(); 
             $table->timestamps();
         });
     }
